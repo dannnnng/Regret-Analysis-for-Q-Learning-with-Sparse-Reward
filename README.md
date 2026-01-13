@@ -1,4 +1,4 @@
-# Maze Reinforcement Learning Experiments (UCB + Sparse Reward + epsilon-greedy)
+# Maze Reinforcement Learning Experiments (UCB + Sparse Reward + ε-greedy)
 
 This script implements a deterministic maze environment and compares two RL approaches:
 - UCB-Hoeffding sparse-reward-aware Q-learning (UCB / UCB-H variants)
