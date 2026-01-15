@@ -59,7 +59,7 @@ The main program runs multiple experiments on two fixed maze seeds and saves rew
 
 ### 2) QLearning εGreedy (baseline)
 - Q-learning update:
-  - `Q(s,a) <- Q(s,a) + alpha * (r + ε * max_a' Q(s',a') - Q(s,a))`
+  - `Q(s,a) <- Q(s,a) + α * (r + 0.99 * max_a' Q(s',a') - Q(s,a))`
 - Behavior policy: fixed ε-greedy (no decay).
 - Evaluation: greedy policy (`argmax_a Q(s,a)`) after training.
 
