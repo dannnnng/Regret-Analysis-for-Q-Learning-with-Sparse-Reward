@@ -1274,6 +1274,7 @@ def main(**kwargs) -> None:
         os.makedirs(output_dir, exist_ok=True)
 
     base_sparse_fraction = sparse_fraction
+    # Setting sparse_fraciton = 1 (UCB-H)
     sparse_one = 1.0
     experiments = [
         {"maze_seed": 1, "algo": "ucb", "variant": "base", "output_name": "ucb",
@@ -1701,4 +1702,5 @@ if __name__ == "__main__":
     kwargs = {k: v for k, v in vars(args).items() if v is not None}
 
     main(**kwargs)
+
 
