@@ -39,7 +39,7 @@ The main program runs multiple experiments on two fixed maze seeds and saves rew
 - Visit counts: `N(s,a)`.
 - UCB bonus:
   - `ι = log(S * A * H * K / failure_prob)`
-  - `δ = 1`
+  - `δ = bonus_constant = 1`
 - Update (per step):
   - `α = (H + 1) / (H + t)`
   - `Q(s,a) <- (1 - α) * Q(s,a) + α * (r + V(s') + bonus)`
