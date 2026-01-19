@@ -7,7 +7,7 @@ This script implements a deterministic maze environment and compares two RL appr
 The main program runs multiple experiments on two fixed maze seeds and saves reward curves, path visualizations, Q-tables, and summary statistics.
 
 ## Files
-- `QLearningUCBsparse-Maze1.py`: main script with environment, algorithms, training, and visualization.
+- `QLearningUCBsparse-Maze.py`: main script with environment, algorithms, training, and visualization.
 
 ## Environment and Maze
 ### State and Action
@@ -67,7 +67,7 @@ The main program runs multiple experiments on two fixed maze seeds and saves rew
 The main function runs following experiments:
 - Maze seeds `1` and `12`
 - Algorithms and settings:
-  - `UCB` (`sparse_fraction=0.01`)
+  - `UCB-H` (`sparse_aware=0.01`)
   - `UCB-H` (`sparse_fraction=1.0`)
 - `ε-greedy` (baseline)
 
@@ -80,7 +80,7 @@ Each run outputs reward curves, Q tables, path visualizations, and config data, 
 
 ## How to Run
 ```bash
-python QLearningUCBsparse-Maze1.py
+python QLearningUCBsparse-Maze.py
 ```
 
 ### Command-line Arguments
