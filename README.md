@@ -36,7 +36,7 @@ The main program runs multiple experiments on two fixed maze seeds and saves rew
 - Goal: improve exploration in sparse reward settings.
 - Q initialization: `Q(s,a) = s = sparse_fraction * H`.
 - V initialization: `0.0`.
-- Visit counts: `N(s,a)`.
+- Visit counts: `t = N(s,a)`.
 - UCB bonus:
   - `ι = log(S * A * H * K / failure_prob)`
   - `δ = bonus_constant = 1`
@@ -67,7 +67,7 @@ The main program runs multiple experiments on two fixed maze seeds and saves rew
 The main function runs following experiments:
 - Maze seeds `1` and `12`
 - Algorithms and settings:
-  - `UCB-H-Sparse-Reward-Awareness` (`Proposed, sparse_aware=0.01`) 
+  - `UCB-H-Sparse-Reward-Awareness` (`Proposed, sparse_fraction=0.01`) 
 - baseline:
   - `ε-greedy` (`ε=0.1`）
   - `UCB-H` (`sparse_fraction=1.0`)
