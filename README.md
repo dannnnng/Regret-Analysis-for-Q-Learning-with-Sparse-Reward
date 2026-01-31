@@ -41,7 +41,7 @@ The main program runs multiple experiments on two fixed maze seeds and saves rew
   - `ι = log(S * A * H * K / failure_prob)`
   - `δ = bonus_constant = 1`
 - Update (per step):
-  - `bonus = ε / √t`
+  - `bonus = Δ / √t`
   - `α = (H + 1) / (H + t)`
   - `Q(s,a) <- (1 - α) * Q(s,a) + α * (r + V(s') + bonus)`
   - `V(s) <- min(s, max_a Q(s,a))`
